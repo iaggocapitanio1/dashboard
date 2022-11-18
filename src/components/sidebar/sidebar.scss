@@ -1,0 +1,87 @@
+@import '../../sass/abstracts/varaibles';
+
+.sidebar {
+    flex: 2;
+    border-right: 0.5px solid $color-grey-light;
+    min-height: 100vh;
+    background-color: white;
+    .top {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-primary;
+    }
+
+    hr{
+        height: 0;
+        border: 0.5px solid $color-grey-light;
+    }
+    .center{
+        padding-left: 1rem;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .title{
+                font-size: 1rem;
+                font-weight: bold;
+                color: $color-grey-dark-2;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                line-height: 2rem;
+                &:hover{
+                    background-color: $color-primary-light;
+                }
+                .icon{
+                    font-size: 1.8rem;
+                    color: $color-primary-light-1;
+                    
+                }
+
+                span{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: $color-grey-dark;
+                    margin-left: 1.0rem;
+                }
+
+            }
+
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        .colorOption{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            border: 0.5px solid $color-primary-light-1;
+            cursor: pointer;
+            margin: 0.5rem;
+            &:nth-child(1){
+                background-color: $color-grey-light-1;
+            
+            }
+            &:nth-child(2){
+                background-color: $color-grey-dark-3;
+            }
+        }
+    }
+
+}
