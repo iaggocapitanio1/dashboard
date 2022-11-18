@@ -1,0 +1,75 @@
+@import "../../sass/abstracts/_varaibles.scss";
+.navbar{
+    height: 5rem;
+    border-bottom: 0.5px solid $color-grey-light;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $color-grey-dark-3;
+
+    .wrapper{
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .items{
+            display: flex;
+            align-items: center;
+
+            .item{
+                display: flex;
+                align-items: center;
+                margin: 1.2rem;
+                position: relative;
+
+                .icon{
+                    font-size: 2rem;
+
+                }
+                .avatar{
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                }
+
+                .counter{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    background-color: red;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: -0.5rem;
+                    right: -0.75rem;
+
+                }
+
+
+            }
+        }
+
+        .search{
+            display: flex;
+            align-items: center;
+            border: 0.5px solid $color-grey-light;
+            padding: 3px;
+
+            input{
+                border: none;
+                outline: none;
+                background-color: transparent;
+
+                &::placeholder{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

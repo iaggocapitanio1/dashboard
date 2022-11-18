@@ -5,7 +5,15 @@
     font-size: 1.6rem;
 
     .homeContainer{
-        background-color: aqua;
-        flex: 6;
+        background-color: transparent;
+        flex: 9;
+    }
+
+    .widgets{
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+        width: 100%;
+        
     }
 }

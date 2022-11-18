@@ -13,8 +13,15 @@ function Home() {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-     
-       
+        <div className="widgets">
+          <Widget type="user"></Widget>
+          <Widget type="order"></Widget>
+
+          <Widget type="earning" ></Widget>
+
+          <Widget  type="balance"></Widget>
+
+        </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
           <Table />
