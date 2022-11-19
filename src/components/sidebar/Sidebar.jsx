@@ -30,6 +30,14 @@ function Sidebar() {
                                                 <span>Dashboard</span>
                                         </li>
                                         <p className="title">LISTS</p>
+                                        <li>
+                                                <PersonOutlineIcon className="icon" />
+                                                <span>Users</span>
+                                        </li>
+                                        <li>
+                                                <StoreIcon className="icon" />
+                                                <span>Products</span>
+                                        </li>
 
                                         <li>
                                                 <CreditCardIcon className="icon" />
